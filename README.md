@@ -1,2 +1,0 @@
-# pythonExcer
-daily excersize
