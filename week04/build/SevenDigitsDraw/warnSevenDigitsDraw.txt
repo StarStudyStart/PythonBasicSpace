@@ -1,0 +1,17 @@
+missing module named resource - imported by posix, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named posix - imported by os, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named _posixsubprocess - imported by subprocess, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named 'org.python' - imported by pickle, E:\pythonSpace\week04\SevenDigitsDraw.py, xml.sax
+missing module named readline - imported by cmd, code, pdb, E:\pythonSpace\week04\SevenDigitsDraw.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named _winreg - imported by platform, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named 'java.lang' - imported by platform, E:\pythonSpace\week04\SevenDigitsDraw.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named termios - imported by tty, E:\pythonSpace\week04\SevenDigitsDraw.py, getpass
+missing module named grp - imported by shutil, tarfile, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, E:\pythonSpace\week04\SevenDigitsDraw.py, netrc, getpass
+missing module named org - imported by copy, E:\pythonSpace\week04\SevenDigitsDraw.py
+missing module named _dummy_threading - imported by dummy_threading, E:\pythonSpace\week04\SevenDigitsDraw.py
