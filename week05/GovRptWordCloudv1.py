@@ -12,6 +12,6 @@ ls = jieba.lcut(f)
 txt = ' '.join(ls)
 wc = wordcloud.WordCloud(font_path='msyh.ttc',\
  	width = 1000,height = 600,background_color='white',\
- 	mask = mk)
+ 	mask = mk,max_words = 8 )
 wc.generate(txt)
 wc.to_file('nianlun.png')
