@@ -15,3 +15,4 @@ wc = wordcloud.WordCloud(font_path='msyh.ttc',\
  	mask = mk,max_words = 8 )
 wc.generate(txt)
 wc.to_file('nianlun.png')
+
