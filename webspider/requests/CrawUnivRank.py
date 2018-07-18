@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import bs4
 import time
 
+#get data
 def getHTML(url):
 	try:
 		rq = requests.get(url,timeout=30)
@@ -15,6 +16,7 @@ def getHTML(url):
 		print("抓取失败！") 
 		return " "
 
+#handle the data
 def fillUnivrList(html,ulist):
 	soup = BeautifulSoup(html,"html.parser")
 	for tr in soup.find('tbody').children:
@@ -22,16 +24,20 @@ def fillUnivrList(html,ulist):
 			tds = tr("td")
 			ulist.append([tds[0].string,tds[1].string,tds[2].string,tds[3].string])
 
+#foramt data && data store 
 def printUniverList(ulist,num):
-	print("{:^10}\t{:^20}\t{:^10}\t{:^11}".format("排名","大学名称","省市","排名积分"))
+	tplt = "{0:^10}\t{1:{4}^10}\t{2:{4}^10}\t{3:^10}"
+	print(tplt.format("排名","大学名称","省市","排名积分",chr(12288)))
 	for n in range(num):
-		time.sleep(0.1)
-		print("{:^10}\t{:^20}\t{:^10}\t{:^11}".format(ulist[n][0],ulist[n][1],ulist[n][2],ulist[n][3]))
+		u = ulist[n]
+		# if u[2] == "安徽":
+		time.sleep(0.01*5)
+		print(tplt.format(u[0],u[1],u[2],u[3],chr(12288)))
 
 def main():
 	unifo = []
 	url = "http://www.zuihaodaxue.cn/zuihaodaxuepaiming2018.html"
 	html = getHTML(url)
 	fillUnivrList(html,unifo)
-	printUniverList(unifo,601)
+	printUniverList(unifo,600)
 main()
