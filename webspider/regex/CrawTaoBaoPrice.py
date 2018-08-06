@@ -15,7 +15,7 @@ def getHtml(url):
 def parsePrice(ult,html):
 	try:
 		plt = re.findall(r'\"view_price\"\:\"[\d\.]*\"',html)  # \" 将字符串标识转义成字符，这样才能对内部字符进行检索
-		tlt = re.findall(r'\"raw_title\"\:\".*\"',html)  # .* 可以匹配所有字符串，默认输出最大匹配字符串  .*? 输出最小匹配
+		tlt = re.findall(r'\"raw_title\"\:\".*?\"',html)  # .* 可以匹配所有字符串，默认输出最大匹配字符串  .*? 输出最小匹配
 		for i in range(len(plt)):   #java害人啊  len(plt)  写成了 plt.len()  mmp
 			price = eval(plt[i].split(':')[1])
 			title = eval(tlt[i].split(':')[1])
